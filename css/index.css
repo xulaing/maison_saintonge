@@ -1,0 +1,21 @@
+#home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#home .title {
+    position: absolute;
+    z-index: 1;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 1;
+}
+
+#home .title img {
+    height: 7vw;
+    max-height: 39px;
+}
