@@ -1,0 +1,33 @@
+/* Tartuffo */
+
+@font-face {
+    font-family: "Tartuffo";
+    src: url("/webfonts/tartuffo/Regular/Tartuffo-Regular.woff2") format("woff2"),
+        url("/webfonts/tartuffo/Regular/Tartuffo-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Tartuffo Thin";
+    src: url("/webfonts/tartuffo/Thin/Tartuffo-Thin.woff2") format("woff2"),
+        url("/webfonts/tartuffo/Thin/Tartuffo-Thin.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Tartuffo Medium";
+    src: url("/webfonts/tartuffo/Medium/Tartuffo-Medium.woff2") format("woff2"),
+        url("/webfonts/tartuffo/Medium/Tartuffo-Medium.woff") format("woff");
+}
+
+/* Sandia */
+
+@font-face {
+    font-family: "Scandia Light Italic";
+    src: url("/webfonts/Scandia/ScandiaWebLightItalic/ScandiaWebLightItalic.woff2") format("woff2"),
+        url("/webfonts/Scandia/ScandiaWebLightItalic/ScandiaWebLightItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Scandia Medium";
+    src: url("/webfonts/Scandia/ScandiaWebMedium/ScandiaWebMedium.woff2") format("woff2"),
+        url("/webfonts/Scandia/ScandiaWebMedium/ScandiaWebMedium.woff") format("woff");
+}
