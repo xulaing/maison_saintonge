@@ -1,19 +1,205 @@
-.footer {
-    display: table;
-    position: relative;
+.reseau-desktop {
+    display: flex;
+    flex-direction: column;
 }
 
-.footer #bandeau-footer {
-    bottom: -1px;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    height: 45px;
-    object-fit: cover;
+.reseau-mobile {
+    display: none;
 }
 
-@media screen and (max-width: 500px) {
-    .footer #bandeau-footer {
-        height: 22px;
+footer {
+    border-top: 1px solid #0D151E;
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.title-footer {
+    font-size: 19px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    margin: 0px 0px 30px 0px
+}
+
+
+h1 {
+    color: #0D151E;
+    font-size: 17px;
+    font-family: "Tartuffo Medium";
+    letter-spacing: 0.18em;
+    font-weight: unset;
+    margin-bottom: 25px;
+}
+
+.langue a {
+    text-decoration: none;
+    font-family: "Scandia Medium";
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    color: #0D151E;
+    margin-right: 19px;
+}
+
+.langue .marqueur {
+    border-bottom: #0D151E 1px solid;
+}
+
+.langue .no-margin {
+    margin-right: 0px;
+}
+
+
+.big-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 28px;
+}
+
+.big-container-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 28px;
+}
+
+.bloc-2 {
+    text-align: end;
+}
+
+.big-container p {
+    font-family: "Tartuffo";
+    font-size: 13px;
+    color: #0D151E;
+    letter-spacing: 0.18em;
+    line-height: 21px;
+    margin: 0px;
+}
+
+
+.reseau a {
+    text-decoration: none;
+    font-family: "Tartuffo";
+    font-size: 13px;
+    color: #0D151E;
+    letter-spacing: 0.18em;
+    line-height: 21px;
+}
+
+.reseau p {
+    display: none;
+}
+
+.newsletter {
+    text-align: end;
+}
+
+#newsletter {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: #0D151E solid 1px;
+    padding: 0px;
+    width: 194.5px;
+
+}
+
+.langue {
+    padding-right: 94px;
+}
+
+.mention-protocole p {
+    font-family: "Tartuffo";
+    font-size: 13px;
+    color: #0D151E;
+    letter-spacing: 0.18em;
+    line-height: 21px;
+}
+
+input[type="email"] {
+    font-family: "Tartuffo";
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    color: #0D151E;
+}
+
+.sendingblue {
+    display: flex;
+
+}
+
+.sendingblue #submit {
+    line-height: inherit;
+    padding-left: 5px;
+    margin: 0px;
+    font-family: "Tartuffo";
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    color: #0D151E;
+}
+
+/* Only margin */
+
+.marge {
+    margin-top: 20px;
+}
+
+/* Mobile CSS */
+@media screen and (max-width: 700px) {
+
+    /* Big container order */
+    .big-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .big-container :nth-child(2) {
+        order: 1;
+    }
+
+    .big-container :nth-child(1) {
+        order: 2;
+    }
+
+    .big-container :nth-child(3) {
+        order: 3;
+    }
+
+    /* Big container position */
+
+    .langue {
+        padding: 0px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .big-container p {
+        text-align: center;
+    }
+
+    .reseau {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .reseau p {
+        display: block;
+    }
+
+    /* Big container 2 order and position */
+    .big-container-2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sendingblue {
+        justify-content: center;
+    }
+
+    .reseau-desktop {
+        display: none;
+    }
+
+    .reseau-mobile {
+        display: flex;
     }
 }
