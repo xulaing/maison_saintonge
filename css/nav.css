@@ -1,0 +1,225 @@
+#navbar {
+    padding: 0px 6.705729166666667vw;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+    z-index: 100;
+    background-color: #F7F3EB !important;
+}
+
+nav .logo img {
+    position: absolute;
+    padding-top: 10px;
+}
+
+nav .pages {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    height: 89px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+nav .pages .link ul {
+    animation: all 2s ease;
+    -webkit-animation: all 2s ease;
+    -moz-animation: all 2s ease;
+    -o-animation: all 2s ease;
+    -ms-animation: all 2s ease;
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #F7F3EB;
+    color: #0D151E;
+    list-style: none;
+    width: 314px;
+    top: 55px;
+    font-family: 'Tartuffo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.22em;
+    text-align: left;
+    text-transform: none;
+    color: #0D151E;
+    display: none;
+    opacity: 0;
+}
+
+nav .pages .link:hover ul,
+nav .pages .link ul:hover {
+    opacity: 1;
+    display: block;
+}
+
+nav .pages .link ul li {
+    border-bottom: 1px solid #0D151E;
+    padding-top: 11px;
+    padding-bottom: 16px;
+}
+
+nav .pages .link ul li a {
+    text-transform: inherit;
+}
+
+nav .booking {
+    height: 89px;
+    padding: 0px !important;
+}
+
+.booking a {
+    color: #A93D17 !important;
+}
+
+nav .pages .link,
+nav .booking {
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .pages .link a,
+nav .booking a {
+    font-family: 'Tartuffo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.18em;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #0D151E;
+}
+
+.menu-open {
+    transform: translateX(-100%);
+}
+
+aside#menu-mobile {
+    position: fixed;
+    z-index: 200;
+    background-color: #F7F3EB;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+#close-btn {
+    left: 18px;
+    position: absolute;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.top-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 65Px;
+    justify-content: flex-end;
+}
+
+.top-mobile div#booking-desktop {
+    padding: 0px 6.705729166666667vw;
+}
+
+.menu-links {
+    width: -webkit-fill-available;
+    padding: 25px 52px;
+}
+
+.menu-links .link {
+    padding-top: 32px;
+}
+
+.menu-links .link a {
+    font-family: 'Tartuffo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.18em;
+    text-decoration: none;
+    color: #0D151E;
+
+}
+
+.menu-links .link ul {
+    margin: 13px 0px;
+    list-style-type: none;
+}
+
+.menu-links .link ul .sous-titre-mobile:not(:first-child) {
+    padding-top: 20px;
+}
+
+.menu-links .link ul a {
+    font-family: 'Tartuffo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.22em;
+    color: #0D151E;
+}
+
+.desktop-hide {
+    display: none;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1020px) {
+    nav .mobile-hide {
+        display: none;
+    }
+
+    .mobile-hide {
+        display: none !important;
+    }
+
+    nav .booking {
+        height: 65px;
+    }
+
+    .booking a {
+        color: #A93D17 !important;
+        font-family: 'Tartuffo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: right;
+        letter-spacing: 0.18em;
+        text-transform: capitalize;
+
+    }
+
+    nav .logo img {
+        position: inherit;
+        padding-top: 15px;
+        width: 39px;
+        left: 18px;
+    }
+
+    .desktop-hide {
+        display: block;
+        opacity: 1;
+    }
+}
