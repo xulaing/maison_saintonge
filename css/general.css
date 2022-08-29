@@ -2,3 +2,9 @@ body {
     margin: 0;
     background-color: #F7F3EB !important;
 }
+
+*,
+*:focus,
+*:hover {
+    outline: none;
+}
