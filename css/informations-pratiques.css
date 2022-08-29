@@ -1,0 +1,116 @@
+.screen {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.screen .big-container-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.screen .big-container-information img {
+    height: 88.518518%;
+}
+
+.screen .big-container-information .text {
+    z-index: 9;
+    position: absolute;
+    width: 42.44%;
+    height: 51.29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.screen .big-container-information .text .title {
+    font-family: 'Tartuffo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+    padding-bottom: 11px;
+    margin: 0;
+    letter-spacing: 0.18em;
+    border-bottom: 1px solid #0D151E;
+    color: #000000;
+    margin-bottom: 2px;
+}
+
+.text .flex-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text .info-pratique .flex-content {
+    margin-top: 13px;
+}
+
+.text .info-pratique .flex-content #left {
+    font-family: 'Scandia Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.text .info-pratique .flex-content #right {
+    font-family: 'Scandia Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* or 154% */
+
+    text-align: right;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.transport {
+    display: flex;
+    flex-direction: column;
+    padding-top: 28px;
+}
+
+.transport .moyen {
+    font-family: 'Tartuffo';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    letter-spacing: 0.18em;
+    margin: 0;
+    color: #000000;
+}
+
+.transport .content {
+    font-family: 'Scandia Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* or 125% */
+
+    letter-spacing: 0.12em;
+    margin: 0;
+    color: #000000;
+}
+
+#right .transport {
+    text-align: right;
+}

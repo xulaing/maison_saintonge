@@ -46,7 +46,7 @@
                     <li class="sous-titre-mobile"><a href="">La galerie</a></li>
                     <li class="sous-titre-mobile"><a href="">Les informations pratiques</a></li>
                     <li class="sous-titre-mobile"><a href="">Les offres spéciales</a></li>
-                    <li class="sous-titre-mobile"><a href="">La collection</a>
+                    <li class="sous-titre-mobile"><a href="/la-collection">La collection</a>
                     </li>
                 </ul>
             </div>
@@ -81,7 +81,7 @@
                     <li><a href="">La galerie</a></li>
                     <li><a href="">Les informations pratiques</a></li>
                     <li><a href="">Les offres spéciales</a></li>
-                    <li><a href="">La collection</a></li>
+                    <li><a href="/la-collection">La collection</a></li>
                 </ul>
             </div>
             <div class="link">
@@ -104,26 +104,30 @@
             <a>Réserver</a>
         </div>
     </nav>
-    <div class="carousel-grid mobile-hide">
-        <div class="mobile-hide" id="left-carousel">
-            <img class="slide left-delay test" src="./assets/left_1.png">
-            <img class="slide left-delay" src="./assets/left_2.png">
-            <img class="slide left-delay" src="./assets/left_3.png">
-        </div>
-        <div class="mobile-hide" id="right-carousel">
-            <img class="slide right-delay" src="./assets/right_1.png">
-            <img class="slide right-delay" src="./assets/right_2.png">
-            <img class="slide right-delay" src="./assets/right_3.png">
+    <div class="carousel-wrap mobile-hide">
+        <div class="carousel-grid ">
+            <div class="mobile-hide" id="left-carousel">
+                <img onclick="changeSlideLeft()" class="slide left-delay test" src="./assets/left_1.png">
+                <img onclick="changeSlideLeft()" class="slide left-delay" src="./assets/left_2.png">
+                <img onclick="changeSlideLeft()" class="slide left-delay" src="./assets/left_3.png">
+            </div>
+            <div class="mobile-hide" id="right-carousel">
+                <img onclick="changeSlideRight()" class="slide right-delay" src="./assets/right_1.png">
+                <img onclick="changeSlideRight()" class="slide right-delay" src="./assets/right_2.png">
+                <img onclick="changeSlideRight()" class="slide right-delay" src="./assets/right_3.png">
+            </div>
         </div>
     </div>
-    <div class="carousel-grid desktop-hide">
-        <div class="desktop-hide" id="mobile-carousel">
-            <img class="slide" src="./assets/left_1.png">
-            <img class="slide" src="./assets/left_2.png">
-            <img class="slide" src="./assets/left_3.png">
-            <img class="slide" src="./assets/right_1.png">
-            <img class="slide" src="./assets/right_2.png">
-            <img class="slide" src="./assets/right_3.png">
+    <div class="carousel-wrap desktop-hide">
+        <div class="carousel-grid ">
+            <div class="desktop-hide" id="mobile-carousel">
+                <img onclick="changeSlideMobile()" class="slide mobile-delay" src="./assets/left_1.png">
+                <img onclick="changeSlideMobile()" class="slide mobile-delay" src="./assets/left_2.png">
+                <img onclick="changeSlideMobile()" class="slide mobile-delay" src="./assets/left_3.png">
+                <img onclick="changeSlideMobile()" class="slide mobile-delay" src="./assets/right_1.png">
+                <img onclick="changeSlideMobile()" class="slide mobile-delay" src="./assets/right_2.png">
+                <img onclick="changeSlideMobile()" class="slide mobile-delay" src="./assets/right_3.png">
+            </div>
         </div>
     </div>
     <section id="home">
@@ -131,17 +135,19 @@
             <img src="./assets/logo_1.png" alt="Titre MAISON SAINTONGE">
             <p>un boutique Hôtel épicerie</p>
         </div>
-        <div class="mobile-hide" id="home-footer">
-            <div id="left">
-                <p id="white">
-                    Hôtel maison saintonge <br> 16, rue de Saintonge 75003 Paris
-                </p>
-            </div>
-            <div id="right">
-                <div class="lang"><a id="fr" class="link-white">FR</a><a class="link-white">EN</a><a
-                        class="link-white">ES</a></div>
-                <a href="mailto:hotel@maisonsaintonge.com" class="link-white">hotel@maisonsaintonge.com</a>
-                <a href="tel:+33142779113" class="link-white">+331 42 77 91 13</a>
+        <div class="mobile-hide">
+            <div id="home-footer">
+                <div id="left">
+                    <p id="white">
+                        Hôtel maison saintonge <br> 16, rue de Saintonge 75003 Paris
+                    </p>
+                </div>
+                <div id="right">
+                    <div class="lang"><a id="fr" class="link-white">FR</a><a class="link-white">EN</a><a
+                            class="link-white">ES</a></div>
+                    <a href="mailto:hotel@maisonsaintonge.com" class="link-white">hotel@maisonsaintonge.com</a>
+                    <a href="tel:+33142779113" class="link-white">+331 42 77 91 13</a>
+                </div>
             </div>
         </div>
         <div class="home-footer desktop-hide" id="left">

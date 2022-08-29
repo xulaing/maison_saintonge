@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('#home-footer').hide().delay(1500).fadeIn(2000);
     $('#fade-logo').fadeOut(2000);
     $('#navbar').hide().delay(5000).fadeIn(2000);
-    $('.carousel-grid').hide().delay(5000).fadeIn(2000);
+    $('.carousel-wrap').hide().delay(5000).fadeIn(2000);
     $('.footer').hide().delay(5000).fadeIn(2000);
 
 });

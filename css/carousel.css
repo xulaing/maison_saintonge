@@ -22,6 +22,21 @@
     animation-delay: 6s;
 }*/
 
+.click img:nth-of-type(1) {
+    animation-name: fader !important;
+    animation-duration: 2s !important;
+    z-index: 20 !important;
+    animation-delay: 0s !important;
+}
+
+.click img:nth-of-type(2) {
+    z-index: 10 !important;
+}
+
+.click img:nth-of-type(n+3) {
+    display: none !important;
+}
+
 #mobile-carousel img:nth-of-type(1) {
     animation-delay: 6s;
 }
