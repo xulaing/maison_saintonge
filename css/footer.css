@@ -21,7 +21,7 @@ footer {
 }
 
 
-h1 {
+footer h1 {
     color: #0D151E;
     font-size: 17px;
     font-family: "Tartuffo Medium";
@@ -168,7 +168,7 @@ input[type="email"] {
         padding: 0px;
     }
 
-    h1 {
+    footer h1 {
         text-align: center;
     }
 
