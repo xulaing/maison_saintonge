@@ -1,10 +1,11 @@
 .slide {
     position: absolute;
-    width: 48.4375%;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
 }
 
+/*
 .left-delay:nth-of-type(1) {
     animation-delay: 8s;
 }
@@ -22,21 +23,7 @@
     animation-delay: 6s;
 }*/
 
-.click img:nth-of-type(1) {
-    animation-name: fader !important;
-    animation-duration: 2s !important;
-    z-index: 20 !important;
-    animation-delay: 0s !important;
-}
-
-.click img:nth-of-type(2) {
-    z-index: 10 !important;
-}
-
-.click img:nth-of-type(n+3) {
-    display: none !important;
-}
-
+/*
 #mobile-carousel img:nth-of-type(1) {
     animation-delay: 6s;
 }
@@ -78,4 +65,38 @@
         height: 100vh;
         object-fit: cover;
     }
+}
+*/
+
+.img-container {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.img-container img {
+    opacity: 0;
+    z-index: 0;
+}
+
+.img-container img.next {
+    opacity: 1;
+    z-index: 1;
+}
+
+.img-container img.prevRight {
+    opacity: 1;
+    z-index: 2;
+}
+
+.img-container img.prevLeft {
+    opacity: 1;
+    z-index: 2;
+}
+
+.img-container img.fade-out {
+    opacity: 0;
+    transition: visibility 0s .5s, opacity .5s linear;
+    visibility: hidden;
 }

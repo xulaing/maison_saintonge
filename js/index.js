@@ -8,6 +8,20 @@
     setTimeout(() => { showSlides() }, 4000)
 })
 */
+
+/*
+
+function slideShow() {
+    document.getElementById('left-carousel').className += "fadeOut";
+    setTimeout(function () {
+        document.getElementById('left-carousel').src = LeftArray[curIndex];
+        document.getElementById('left-carousel').className = "";
+    }, 500);
+    curIndex++;
+    if (curIndex == LeftArray.length) { curIndex = 0; }
+}
+*/
+/* old carousel 
 window.addEventListener("DOMContentLoaded", function (e) {
     var carousel = document.getElementById("left-carousel");
     var fadeComplete = function (e) { carousel.appendChild(arr[0]); };
@@ -72,3 +86,4 @@ const changeSlideMobile = () => {
         carouselMobile[2].style.setProperty("animation-delay", 6 + 's');
     }, 2000);
 }
+*/
