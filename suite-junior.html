@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/fonts.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/general.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/bandeau.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/nav.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/suites.css">
+</head>
+<body>
+    <aside id="menu-mobile" class="menu-open">
+        <div class="top-mobile">
+            <img onclick="toggleMenu()" id="close-btn" src="./assets/Icons/back-arrow.svg" alt="bouton pour fermer le menu">
+            <div id="booking-desktop" class="booking">
+                <a>Réserver</a>
+            </div>
+        </div>
+        <div class="menu-links">
+            <div class="link">
+                <a href="javascript:void(0)">L'hôtel</a>
+                <ul>
+                    <li class="sous-titre-mobile"><a href="">La galerie</a></li>
+                    <li class="sous-titre-mobile"><a href="">Les informations pratiques</a></li>
+                    <li class="sous-titre-mobile"><a href="">Les offres spéciales</a></li>
+                    <li class="sous-titre-mobile"><a href="">La collection</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="link">
+                <a href="">Quartier</a>
+            </div>
+            <div class="link">
+                <a href="">Les chambres</a>
+                <ul>
+                    <li class="sous-titre-mobile"><a href="">Chambre supérieure</a></li>
+                    <li class="sous-titre-mobile"><a href="">Chambre exécutive</a></li>
+                    <li class="sous-titre-mobile"><a href="">Chambre deluxe</a></li>
+                    <li class="sous-titre-mobile"><a href="">Suite junior</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="link">
+                <a href="" title="L'épicerie">L'épicerie</a>
+            </div>
+        </div>
+    </aside>
+    <nav id="navbar" class="fade-in">
+        <div class="logo">
+            <a href="#"><img class="mobile-hide" id="logo-icon" src="./assets/logo_icon.png" alt="Logo">
+                <img onclick="toggleMenu()" class="desktop-hide" id="menu-mobile" src="./assets/logo_icon_2.png"
+                    alt="Logo"></a>
+        </div>
+        <div class="pages mobile-hide">
+            <div class="link">
+                <a href="javascript:void(0)" title="L'hôtel">L'hôtel</a>
+                <ul>
+                    <li><a href="">La galerie</a></li>
+                    <li><a href="">Les informations pratiques</a></li>
+                    <li><a href="">Les offres spéciales</a></li>
+                    <li><a href="">La collection</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <a href="" title="Le Marais">Le Marais</a>
+            </div>
+            <div class="link">
+                <a href="" title="Les chambres">Les chambres</a>
+                <ul>
+                    <li><a href="">Chambre supérieure</a></li>
+                    <li><a href="">Chambre exécutive</a></li>
+                    <li><a href="">Chambre deluxe</a></li>
+                    <li><a href="">Suite junior</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <a href="" title="L'épicerie">L'épicerie</a>
+            </div>
+        </div>
+        <div id="booking-desktop" class="booking">
+            <a>Réserver</a>
+        </div>
+    </nav>
+
+    <section class="main">
+        <div class="conteneur-1">
+            <div class="information">
+                <h1 class="titre">La suite junior</h1>
+                <p class="sous-titre" onclick="hideAndShow()">Voir les caractéristiques</p>
+                <p class="description">
+                    lle se trouve seule au 6ème et dernier étage.
+                    Cette pièce secrète et coupée du monde se
+                    situe juste sous le ciel. Une voûte abrite le
+                    petit salon, dont la fenêtre ouvre sur les
+                    toits de Paris. Puisque les maisons sont
+                    toutes de même hauteur, le regard se perd à
+                    l’horizon comme face à la mer.</p>
+                <div class="bouttons">
+                    <p class="reservation">Reserver</p>
+                    <a href="" class="retour">Retour</a>
+                </div>
+                <img class="bouquet" src="assets/Les_Chambres/Suite_Junior/Fleure.png">
+            </div>
+            
+
+
+            <div class="caracteristique">
+                    <img class="close" onclick="showAndHide()" src="./assets/Les_Chambres/Suite_Junior/croix.svg">
+                <ul class="liste">
+                    <li>. Chambre Supérieure pour 2 personnes</li>
+                    <li>. Mobilier design : Bureau, Dressing</li>
+                    <li>. Minibar</li>
+                    <li>. Produits d’accueil « Grown Alchemist »</li>
+                    <li>. Wifi Internet Haute Qualité gratuit</li>
+                    <li>. Wake up call sur demande</li>
+                    <li>. Service de blanchisserie</li>
+                    <li>. Room-service (07h-23h)</li>
+                    <li>. Lit Queen size 140*190 - 160*200</li>
+                    <li>. Coffre-fort taille ordinateur</li>
+                    <li>. Téléphone</li>
+                    <li>. Sèche-cheveux</li>
+                    <li>. Air conditionné individuel</li>
+                    <li>. Adaptateur prises US/UK (sur demande)</li>
+                    <li>. Lit bébé gratuit sur demande</li>
+                    <li>. Chambre et hôtel non-fumeur</li>
+                    <li>. Sur cour au calme</li>
+                    <li>. Plateau de courtoisie thé-café</li>
+                    <li>. Douche</li>
+                    <li>. Téléviseur LED à écran extra plat</li>
+                    <li>. Fenêtres avec isolation acoustique</li>
+                    <li>. Fer et planche à repasser (sur demande)</li>
+                    <li>. Conciergerie disponible 24H/24</li>
+                    <li>. Check-in : 15H - Check-out : 12H</li>
+                </ul>
+            </div>
+        </div>
+        <div class="images">
+            <img class="item-1" src="assets/Les_Chambres/Suite_Junior/PHOTO_1.png">
+            <img class="item-2" src="assets/Les_Chambres/Suite_Junior/PHOTO_2.png">
+            <img class="item-3" src="assets/Les_Chambres/Suite_Junior/PHOTO_2.png">
+            <img class="item-4" src="assets/Les_Chambres/Suite_Junior/PHOTO_1.png">
+            <img class="item-5" src="assets/Les_Chambres/Suite_Junior/PHOTO_1.png">
+            <img class="item-6" src="assets/Les_Chambres/Suite_Junior/PHOTO_2.png">
+            <img class="item-7" src="assets/Les_Chambres/Suite_Junior/PHOTO_2.png">
+        </div>
+    </section>
+
+    <footer>
+        <h1 class="title-footer">MAISON SAINTONGE</h1>
+        <div class="big-container">
+            <div class="bloc-1">
+                <h1>ADRESSE</h1>
+                <p>
+                    16, rue de saintonge 75003 paris<br>
+                    Notre réception est ouverte<br>
+                    et à votre disposition tous les jours,<br>
+                    jour et nuit
+                </p>
+            </div>
+    
+            <div class="langue">
+                <a href="" class="marqueur">FR</a>
+                <a href="">EN</a>
+                <a href="" class="no-margin">ES</a>
+            </div>
+    
+            <div class="bloc-2">
+                <h1>CONTACT</h1>
+                <p>
+                    hotel@maisonsaintonge<br>
+                    +33 (0) 1 42 77 91 13<br>
+                </p>
+                <div class="reseau reseau-desktop">
+                    <a href="">Instagram</a>
+                    <p>. aled</p>
+                    <a href="">Linkedin</a>
+                </div>
+    
+                <div class="reseau reseau-mobile">
+                    <p>.</p>
+                    <a href="">Instagram</a>
+                    <a href="">Linkedin</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="big-container-2">
+            <div class="mention-protocole">
+                <h1 class="marge">MENTION LÉGALE</h1>
+                <p>
+                    Protocole Sanitaire
+                </p>
+            </div>
+    
+            <div class="newsletter">
+                <h1 class="marge">NEWSLETTERS</h1>
+                <div class="sendingblue">
+                    <input type="email" id="newsletter">
+                    <p id="submit     ">Ok</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer">
+        <img id="bandeau-footer" src="./assets/bandeau-footer.svg" alt="Bandeau Maison Saintonge">
+    </div>
+
+    <script>
+        function hideAndShow() {
+            document.getElementsByClassName("information")[0].style.display = "none";
+            document.getElementsByClassName("bouquet")[0].style.display = "none";
+            document.getElementsByClassName("caracteristique")[0].style.display = "block";
+        }
+
+        function showAndHide(){
+            document.getElementsByClassName("information")[0].style.display = "flex";
+            document.getElementsByClassName("bouquet")[0].style.display = "flex";
+            document.getElementsByClassName("caracteristique")[0].style.display = "none";
+        }
+    </script>
+</body>
+</html>

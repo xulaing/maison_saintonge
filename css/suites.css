@@ -1,0 +1,176 @@
+.main {
+  display: flex;
+  max-width: 98%;
+  margin: auto;
+  height: 100vh;
+  justify-content: flex-end;
+
+}
+
+.caracteristique {
+  display: none;
+}
+
+/* Gestion de la partie texte */
+
+.conteneur-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  position: relative;
+}
+
+.information .bouquet {
+  position: absolute;
+  left: 95%;
+  top: 230px;
+  width: 50.9%;
+  height: auto;
+}
+
+.information .titre {
+  font-family: "Tartuffo Medium";
+  font-size: 20px;
+  font-weight: inherit;
+  letter-spacing: 0.1em;
+  color: #0D151E;
+  margin: 0px;
+}
+
+.information .sous-titre {
+  font-family: "Scandia Light Italic";
+  font-size: 17px;
+  color: #0D151E;
+  margin: 20px 0px;
+}
+
+.information .sous-titre:hover {
+  cursor: pointer;
+}
+
+.information .description {
+  font-family: "Tartuffo";
+  font-size: 16px;
+  letter-spacing: 0.18em;
+  color: #0D151E;
+  line-height: 20px;
+  text-align: justify;
+  margin: 0px 0px 0px 0px;
+}
+
+.information .bouttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information .reservation,
+.information .retour {
+  font-family: "Scandia Light Italic";
+  font-size: 17px;
+  color: #0D151E;
+  text-decoration: none;
+}
+
+/* Creation des caractéristiques */
+
+.caracteristique {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  left: -17px;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  font-family: "Tartuffo";
+  color: #0D151E;
+  letter-spacing: 0.1em;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+/* Creation grille + Gestion photo */
+
+.images {
+  display: grid;
+  grid-template-columns: [start] auto [column2] auto [end];
+  grid-template-rows: [row1-start] auto [row1-end] auto [row2] auto [row3] auto [row4] auto [last-line];
+  column-gap: 20px;
+  row-gap: 20px;
+  overflow: auto;
+  width: 50%;
+}
+
+.images::-webkit-scrollbar {
+  display: none;
+}
+
+.item-1 {
+  grid-column-start: start;
+  grid-column-end: end;
+  grid-row-start: row1-start;
+  width: 100%;
+  height: auto;
+}
+
+.item-2 {
+  grid-column-start: start;
+  grid-row-start: row1-end;
+  width: 100%;
+  height: auto;
+}
+
+.item-3 {
+  grid-column-start: column2;
+  grid-row-start: row1-end;
+  width: 100%;
+  height: auto;
+}
+
+.item-4 {
+  grid-column-start: start;
+  grid-column-end: end;
+  grid-row-start: row2;
+  width: 100%;
+  height: auto;
+}
+
+.item-5 {
+  grid-column-start: start;
+  grid-column-end: end;
+  grid-row-start: row3;
+  width: 100%;
+  height: auto;
+}
+
+.item-6 {
+  grid-column-start: start;
+  grid-row-start: row4;
+  width: 100%;
+  height: auto;
+}
+
+.item-7 {
+  grid-column-start: column2;
+  grid-row-start: row4;
+  width: 100%;
+  height: auto;
+}
