@@ -14,18 +14,60 @@
     padding: 0;
 }
 
-.screen .big-container-information img {
+.screen .big-container-information .card-grid {
+    display: grid;
+    height: 88.518518%;
+    width: 1168px;
+    grid-template-columns: 15.06% 69.67% 15.06%;
+    grid-template-rows: 54.96% 45.04%;
+}
+
+.card-grid .card-mobile {
+    display: none;
+}
+
+.card-grid .card-empty {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+
+    height: -webkit-fill-available;
+}
+
+.screen .big-container-information .flower {
+    z-index: 9;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+    height: 310px;
+    align-self: start;
+    justify-self: center;
+    padding-right: 30px;
+}
+
+.screen .big-container-information .card {
     height: 88.518518%;
 }
 
+
 .screen .big-container-information .text {
     z-index: 9;
-    position: absolute;
-    width: 42.44%;
+    /* position: absolute; */
+    width: 815px;
     height: 51.29%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: center;
+    width: 100%;
 }
 
 .screen .big-container-information .text .title {
@@ -54,15 +96,41 @@
     margin-top: 13px;
 }
 
-.text .info-pratique .flex-content #left {
+.saintonge .flex-content #left {
     font-family: 'Scandia Medium';
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.17em;
+    color: #000000;
+
+    padding-right: 4px;
+}
+
+.saintonge .flex-content #right {
+    font-family: 'Scandia Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.17em;
+    color: #000000;
+
+    padding-left: 4px;
+}
+
+.text .info-pratique .flex-content #left {
+    font-family: 'Scandia Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+    letter-spacing: 0.17em;
     text-transform: uppercase;
     color: #000000;
+    padding-right: 4px;
 }
 
 .text .info-pratique .flex-content #right {
@@ -76,7 +144,7 @@
     text-align: right;
     letter-spacing: 0.17em;
     text-transform: uppercase;
-
+    padding-left: 4px;
     color: #000000;
 }
 
@@ -101,11 +169,12 @@
 .transport .content {
     font-family: 'Scandia Medium';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 13px;
     line-height: 20px;
     /* or 125% */
 
+    text-transform: uppercase;
     letter-spacing: 0.12em;
     margin: 0;
     color: #000000;
@@ -113,4 +182,169 @@
 
 #right .transport {
     text-align: right;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .screen .big-container-information .card {
+        display: none;
+    }
+
+
+    .screen .big-container-information .card-empty {
+        height: -webkit-fill-available;
+        display: block;
+    }
+
+    .screen .big-container-information .flower {
+        display: block;
+        /* position: absolute; */
+        /* height: 310px; */
+        /* top: 615px; */
+        /* right: 434px; */
+    }
+
+
+}
+
+@media screen and (max-width: 1170px) {
+    .screen .big-container-information .card-grid {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .screen .big-container-information .text {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .screen {
+        height: auto;
+        padding-top: 70px;
+    }
+
+    .screen .big-container-information {
+        height: -webkit-fill-available;
+    }
+
+    .screen .big-container-information .card-empty {
+        display: none;
+        height: 629px;
+    }
+
+    .card-grid .card-mobile {
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        width: 100%;
+        height: auto;
+    }
+
+    .screen .big-container-information .flower {
+        display: none;
+        height: 0;
+    }
+
+    .screen .big-container-information .card-grid {
+        display: grid;
+        /* flex-direction: column; */
+        grid-template-columns: 27px auto 27px;
+        grid-template-rows: 49px min-content 49px;
+        margin: 0px 19px;
+        width: -webkit-fill-available;
+    }
+
+    .screen .big-container-information .text {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        align-self: center;
+        width: 100%;
+    }
+
+    .text .flex-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .saintonge .flex-content #left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .saintonge .flex-content #left .transport:nth-child(2) {
+        align-self: flex-end;
+        text-align: end;
+    }
+
+    .saintonge .flex-content #right .transport:nth-child(2) {
+        align-self: flex-start;
+        text-align: start;
+    }
+
+    .saintonge .flex-content #right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .screen .big-container-information .text .title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 20px;
+        /* identical to box height, or 182% */
+
+        letter-spacing: 0.18em;
+        padding-bottom: 4px
+    }
+
+    .text .info-pratique .flex-content #left,
+    .text .info-pratique .flex-content #right {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 9px;
+        line-height: 12px;
+        /* or 133% */
+
+        letter-spacing: 0.17em;
+    }
+
+    .transport {
+        padding-top: 18px
+    }
+
+    .transport .moyen {
+        font-weight: 500;
+        font-size: 9px;
+        line-height: 12px;
+        /* or 133% */
+
+        letter-spacing: 0.18em;
+    }
+
+    .transport .content {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 9px;
+        line-height: 12px;
+        /* or 133% */
+
+        letter-spacing: 0.17em;
+        color: #000000;
+    }
+
+}
+
+@media screen and (max-width: 365px) {
+    .screen .big-container-information .card-mobile {
+        height: 729px;
+    }
 }
