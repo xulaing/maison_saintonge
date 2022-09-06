@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+.saut-ligne {
+    display: none;
+}
+
 .reseau-mobile {
     display: none;
 }
@@ -166,6 +170,7 @@ input[type="email"] {
 
     .langue {
         padding: 0px;
+        margin-bottom: 30px;
     }
 
     footer h1 {
@@ -174,6 +179,8 @@ input[type="email"] {
 
     .big-container p {
         text-align: center;
+        font-size: 11px;
+        line-height: 16px;
     }
 
     .reseau {
@@ -201,5 +208,47 @@ input[type="email"] {
 
     .reseau-mobile {
         display: flex;
+        gap: 18px;
+    }
+
+    .title-footer {
+        font-size: 15px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    footer h1 {
+        font-size: 15px;
+    }
+
+    .langue a {
+        font-size: 12px;
+    }
+
+    footer {
+        padding-top: 40px;
+    }
+
+    .sheesh {
+        display: none;
+    }
+
+    .saut-ligne {
+        display: block;
+    }
+
+    .contact {
+        margin: 25px 0px;
+    }
+
+    .marge {
+        margin: 25px 0px;
+    }
+
+    .mention-protocole p{
+        margin: 0px;
+    }
+
+    .last-image{
+        padding-bottom: 60px;
     }
 }

@@ -174,3 +174,169 @@ ul li {
   width: 100%;
   height: auto;
 }
+
+
+@media screen and (max-width: 1521px) {
+  .information .bouquet {
+    top: 265px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .information .bouquet {
+    top: 315px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .information .bouquet {
+    top: 355px;
+    width: 57.9%;
+  }
+
+  .images {
+    row-gap: 15px;
+    column-gap: 15px;
+  }
+
+}
+
+@media screen and (max-width: 985px) {
+  .information {
+    width: 56%;
+  }
+
+  .information .bouquet {
+    top: 312px;
+    width: 45.9%;
+    left: 90%;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .information .titre {
+    font-size: 18px;
+  }
+
+  .information .sous-titre {
+    font-size: 15px;
+    margin: 15px 0px;
+  }
+
+  .information .description {
+    font-size: 14px;
+  }
+
+  .information .reservation,
+  .information .retour {
+    font-size: 15px;
+  }
+
+  .information .bouquet {
+    top: 285px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .information .bouquet {
+    top: 340px;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .main {
+    flex-direction: column;
+    height: inherit;
+  }
+
+  .conteneur-1 {
+    width: 100%;
+    padding-top: 175px;
+    padding-bottom: 210px;
+  }
+
+  .images {
+    width: 100%;
+    row-gap: 9px;
+    column-gap: 9px;
+  }
+
+
+  .information .titre {
+    font-size: 16px;
+  }
+
+  .information .sous-titre {
+    font-size: 13px;
+    margin: 15px 0px;
+  }
+
+  .information .description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .information .reservation,
+  .information .retour {
+    font-size: 13px;
+  }
+
+  .information .bouquet {
+    width: 35.9%;
+    left: 92%;
+    top: 190px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+
+  .information .bouquet {
+    top: 210px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .information .bouquet {
+    top: 240px;
+    left: 95%;
+  }
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+  .information .titre {
+    font-size: 14px;
+  }
+
+  .information .sous-titre {
+    font-size: 11px;
+    margin: 15px 0px;
+  }
+
+  .information .description {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .information .reservation,
+  .information .retour {
+    font-size: 11px;
+  }
+
+  .information .bouquet {
+    width: 40.9%;
+    left: 76%;
+    top: 240px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  ul li{
+    font-size: 10px;
+    line-height: 19px;
+  }
+}
