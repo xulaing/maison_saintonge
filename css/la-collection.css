@@ -27,7 +27,7 @@
 }
 
 .small-container .sub-title {
-    font-family: 'Tartuffo';
+    font-family: 'Caslon Italic';
     font-style: italic;
     font-weight: 400;
     font-size: 16px;
@@ -44,7 +44,7 @@
 }
 
 .small-container .text p {
-    font-family: 'Tartuffo';
+    font-family: 'Caslon Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

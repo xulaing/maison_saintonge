@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'LTC Caslon Pro';
+    src: local('LTC Caslon Pro Italic'), local('LTC-Caslon-Pro-Italic'),
+        url('ACaslonPro-Italic.woff2') format('woff2'),
+        url('ACaslonPro-Italic.woff') format('woff'),
+        url('ACaslonPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }

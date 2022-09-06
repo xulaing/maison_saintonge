@@ -31,3 +31,15 @@
     src: url("/webfonts/Scandia/ScandiaWebMedium/ScandiaWebMedium.woff2") format("woff2"),
         url("/webfonts/Scandia/ScandiaWebMedium/ScandiaWebMedium.woff") format("woff");
 }
+
+@font-face {
+    font-family: "CaslonPro Regular";
+    src: url("/webfonts/CaslonPro/ACaslonPro-Regular/ACaslonPro-Regular.woff2") format("woff2"),
+        url("/webfonts/CaslonPro/ACaslonPro-Regular/ACaslonPro-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "CaslonPro Italic";
+    src: url("/webfonts/CaslonPro/ACaslonPro-Italic/ACaslonPro-Italic.woff2") format("woff2"),
+        url("/webfonts/CaslonPro/ACaslonPro-Italic/ACaslonPro-Italic.woff") format("woff");
+}
