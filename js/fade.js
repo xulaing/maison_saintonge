@@ -4,9 +4,21 @@ $(document).ready(function () {
     $('#home-footer').hide().delay(1500).fadeIn(2000);
     $('#fade-logo').fadeOut(2000);
     $('#navbar').hide().delay(5000).fadeIn(2000);
-    $('.carousel-wrap').hide().delay(5000).fadeIn(2000);
+    if ($(window).width() < 1025) {
+        $('.carousel-wrap-mobile').hide().delay(5000).fadeIn(2000);
+    }
+    else {
+        $('.carousel-wrap').hide().delay(5000).fadeIn(2000);
+    }
     $('.footer').hide().delay(5000).fadeIn(2000);
 
+    // carousel mobile
+    setTimeout(() => {
+        const slide = new Slideshow;
+        slide.changeSlide();
+
+        $("#myCarousel").attr("data-bs-interval", "4000");
+    }, 4000);
 });
 
 function footerColor() {

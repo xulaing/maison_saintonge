@@ -114,15 +114,3 @@ class Slideshow {
         });
     }
 }
-
-$(document).ready(function () {
-    
-    console.log($("#myCarousel").attr("data-bs-interval"));
-    setTimeout(() => {
-        const slide = new Slideshow;
-        slide.changeSlide();
-
-        $("#myCarousel").attr("data-bs-interval", "4000");
-        console.log($("#myCarousel").attr("data-bs-interval"));
-    }, 4000);
-});
